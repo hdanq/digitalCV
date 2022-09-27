@@ -1,4 +1,4 @@
-@media (max-width: 500px) {
+@media (max-width: 576px) {
   .nav-container-mobile {
     flex-direction: column;
     align-content: start;
