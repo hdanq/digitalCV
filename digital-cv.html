@@ -40,26 +40,76 @@
       .shadows-container {
         box-shadow: 0 0 20px rgb(128, 126, 126);
       }
+      .border-content {
+        border: 8px solid #339af0;
+      }
+      #info-team .border-content:nth-child(1) {
+        border-bottom: none;
+        border-right: none;
+      }
+      .border-content:nth-child(2) {
+        border-bottom: none;
+        border-right: none;
+      }
+      .border-content:nth-child(3) {
+        border-right: none;
+      }
+      .border-content:nth-child(4) {
+        border-right: none;
+      }
+      @media (min-width: 768px) and (max-width: 998px) {
+        #info-team .border-content:nth-child(1) {
+          border-right: 8px solid #339af0;
+        }
+        .border-content:nth-child(2) {
+          border-right: 8px solid #339af0;
+        }
+        .border-content:nth-child(3) {
+          border-bottom: none;
+          border-right: 8px solid #339af0;
+        }
+        .border-content:nth-child(4) {
+          border-bottom: none;
+          border-right: 8px solid #339af0;
+        }
+      }
+      @media (max-width: 500px) {
+        #info-team .border-content:nth-child(1) {
+          border-right: 8px solid #339af0;
+        }
+        .border-content:nth-child(2) {
+          border-right: 8px solid #339af0;
+        }
+        .border-content:nth-child(3) {
+          border-bottom: none;
+          border-right: 8px solid #339af0;
+        }
+        .border-content:nth-child(4) {
+          border-bottom: none;
+          border-right: 8px solid #339af0;
+        }
+      }
     </style>
     <title>Digital CV</title>
   </head>
 
   <body>
-    <section class="container mt-5">
+    <section class="container my-4">
       <div class="row shadows-container">
-        <div class="row col-lg-9 col-md-12">
+        <div class="row col-lg-9 col-md-12" id="info-team">
           <!-- Goals -->
-          <div class="col-lg-8 col-md-12 border border-5 border-primary">
+          <div class="col-lg-8 col-md-12 border-content">
             <div
               class="fs-4 fw-bold border-bottom border-1 border-dark py-2 title"
             >
-              Scopes
+              Goals
             </div>
             <div
               class="d-flex my-3 border-bottom border-2 flex-lg-row flex-column align-items-center"
             >
               <i class="fa-solid fa-flag-checkered mx-5 mt-2 fs-2 mb-md-4"></i>
               <p class="mx-3">
+                <span class="fw-bold">Goal 1</span> <br />
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
                 modi facere corporis.
               </p>
@@ -69,6 +119,7 @@
             >
               <i class="fa-solid fa-flag-checkered mx-5 mt-2 fs-2 mb-md-4"></i>
               <p class="mx-3">
+                <span class="fw-bold">Goal 2</span> <br />
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
                 modi facere corporis.
               </p>
@@ -78,13 +129,14 @@
             >
               <i class="fa-solid fa-flag-checkered mx-5 mt-2 fs-2 mb-4"></i>
               <p class="mx-3">
+                <span class="fw-bold">Goal 3</span> <br />
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
                 modi facere corporis.
               </p>
             </div>
           </div>
           <!-- Team -->
-          <div class="col-lg-4 col-md-12 border border-5 border-primary">
+          <div class="col-lg-4 col-md-12 border-content">
             <div
               class="fs-4 fw-bold border-bottom border-1 border-dark py-2 title"
             >
@@ -117,7 +169,7 @@
           </div>
 
           <!-- Scopes -->
-          <div class="col-lg-8 col-md-12 border border-5 border-primary">
+          <div class="col-lg-8 col-md-12 border-content">
             <div
               class="fs-4 fw-bold border-bottom border-1 border-dark py-2 title"
             >
@@ -149,7 +201,7 @@
             </div>
           </div>
           <!-- Primary -->
-          <div class="col-lg-4 col-md-12 border border-5 border-primary">
+          <div class="col-lg-4 col-md-12 border-content">
             <div
               class="fs-4 fw-bold border-bottom border-1 border-dark py-2 title"
             >
@@ -197,7 +249,7 @@
         </div>
         <!-- Time line -->
         <div class="row col-lg-3 col-md-12">
-          <div class="col-sm-12 border border-5 border-primary">
+          <div class="col-sm-12 border-content">
             <div
               class="fs-4 fw-bold border-bottom border-1 border-dark py-2 title"
             >
