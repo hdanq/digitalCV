@@ -1,0 +1,283 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+.section-title {
+  line-height: 2.2;
+}
+/* navbar */
+#nav-bar {
+  text-align: center;
+  position: relative;
+}
+.border-nav {
+  border-left: 1px solid #dee2e6 !important;
+  border-right: 1px solid #dee2e6 !important;
+}
+
+.img-default {
+  background-image: url(../images/default-avatar.webp);
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  border: 8px solid #f7f7f7;
+  border-radius: 50%;
+  position: absolute;
+  top: -60px;
+  left: 45%;
+}
+
+#banner {
+  width: auto;
+  height: 680px;
+  position: relative;
+}
+
+.img-banner {
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.4),
+      rgba(34, 34, 34, 0.4)
+    ),
+    url("../images/banner.jpg");
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 680px;
+  background-position: top;
+}
+#banner div:nth-child(2) {
+  /* text in the middle of the banner */
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f7f7f7;
+  text-align: center;
+  font-weight: 300;
+  line-height: 1.3;
+}
+.icon {
+  color: #228be6;
+}
+
+/* about */
+.bg-color {
+  background: #f5f5f5;
+}
+.bg-color-1 {
+  background: #ebebeb;
+}
+#about li {
+  list-style-type: none !important;
+  position: relative;
+}
+#about li::before {
+  content: "-";
+  margin: 5px;
+}
+
+/* job infor */
+#job-info .icon {
+  color: #343a40;
+  font-size: 50px;
+}
+.interests .icon {
+  font-size: 32px !important;
+  width: 62px !important;
+  height: 62px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#job-info li {
+  list-style-type: none !important;
+  position: relative;
+}
+#job-info li::before {
+  content: "-";
+  margin: 5px;
+}
+
+.point-ladder {
+  background: #199cdb;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+/* timeline */
+.time-line {
+  position: relative;
+  margin-left: 35px;
+}
+
+.time-line::before {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  background-color: #199cdb;
+  border-radius: 50%;
+  top: 16px;
+  left: -20px;
+}
+
+/* certificon icate  */
+.cert {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 30px;
+  position: relative;
+}
+/* ----------------------automatically add bottom border if there is next row------------------------ */
+.cert > div:nth-child(odd)::after {
+  content: "";
+
+  bottom: 0;
+  left: 0;
+  width: calc(100% + 15px);
+  height: 1.5px;
+  background-color: #d6c08d;
+  border-radius: 50% 0;
+  position: absolute;
+  bottom: -15px;
+}
+.cert > div:nth-child(even)::after {
+  content: "";
+  bottom: 0;
+  right: 0;
+  width: calc(100% + 15px);
+  height: 1.5px;
+  background-color: #d6c08d;
+  border-radius: 0 50%;
+  position: absolute;
+  bottom: -15px;
+}
+
+.cert > div:last-child:after {
+  content: "";
+  bottom: 0;
+  right: 0;
+  width: calc(100% + 15px);
+  height: 1.5px;
+  background-color: transparent;
+}
+
+.cert > div:nth-last-child(2):nth-child(odd)::after {
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: calc(100% + 15px);
+  height: 1.5px;
+  background-color: transparent;
+}
+
+/* --------------------------------------------------------------------------- */
+
+.cert img {
+  width: 50%;
+  height: auto;
+  box-shadow: 0 2px 10px rgb(0, 0, 0, 0.01);
+}
+
+.cert li {
+  line-height: 1.8;
+}
+/* ---------------automatically add center border if there is next column-------------- */
+.cert > div {
+  position: relative;
+}
+
+.cert > div:nth-child(even)::before {
+  content: "";
+  top: 0;
+  bottom: 0;
+  width: 1.5px;
+  background-color: #d6c08d;
+  border-radius: 50%;
+  position: absolute;
+  left: -15px;
+}
+/* ----------------------------------------------------------------------- */
+
+.cert1,
+.cert2,
+.cert3 {
+  display: flex;
+  gap: 20px;
+  font-size: 13px;
+}
+.cert h4 {
+  font-size: medium;
+}
+#certificon-icate li {
+  list-style-type: none !important;
+  position: relative;
+}
+#certificon-icate li::before {
+  content: "-";
+  margin: 5px;
+}
+/* project */
+.project-cert img {
+  width: 100% !important;
+}
+.project-cert .icon {
+  color: #868e96;
+}
+.project-box li {
+  display: inline-block;
+}
+
+/* uppercase project name */
+.project-cert > div:nth-child(2) {
+  text-transform: uppercase;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  font-size: 18px;
+}
+
+/* create horizontal block */
+
+table,
+tr,
+td {
+  width: 100%;
+  /* create boder in table */
+  color: #212529;
+  border-top: 2px solid #868e96 !important;
+  /* remove excess border */
+  border-collapse: collapse;
+  font-size: 14px;
+  vertical-align: top;
+}
+td:first-child {
+  width: 25%;
+}
+#project li {
+  list-style-type: none !important;
+  position: relative;
+}
+#project li::before {
+  content: "-";
+  margin: 5px;
+}
+#project ul {
+  padding: 0;
+}
+
+/* footer */
+
+#footer .icon {
+  font-size: 32px !important;
+}
+
+#footer {
+  font-size: 16spx !important;
+}

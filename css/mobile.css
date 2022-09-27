@@ -1,0 +1,105 @@
+@media (max-width: 500px) {
+  .nav-container-mobile {
+    flex-direction: column;
+    align-content: start;
+    gap: 0;
+  }
+
+  /* banner */
+  #banner {
+    width: auto;
+    height: 160px;
+    position: relative;
+  }
+  .img-banner {
+    background-image: linear-gradient(
+        rgba(34, 34, 34, 0.4),
+        rgba(34, 34, 34, 0.4)
+      ),
+      url("../images/banner.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: top;
+  }
+
+  /* navbar */
+  .border-nav {
+    border-left: none !important;
+    border-right: none !important;
+  }
+  .border-bottom-nav {
+    border-bottom: none !important;
+  }
+  /* certificon icate  */
+  .cert {
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    gap: 10px;
+  }
+
+  .cert img {
+    width: 100% !important;
+    height: auto;
+  }
+  .cert > div {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+  }
+  .cert h4 {
+    font-size: medium;
+  }
+  .cert > div:nth-child(odd)::after {
+    content: "";
+
+    bottom: 0;
+    left: 0;
+    width: calc(100% + 15px);
+    height: 1.5px;
+    background-color: #e03131;
+    border-radius: 50% 0;
+    position: absolute;
+    bottom: -15px;
+  }
+  .cert > div:nth-child(even)::after {
+    content: "";
+    bottom: 0;
+    right: 0;
+    width: calc(100% + 15px);
+    height: 1.5px;
+    background-color: #e03131;
+    border-radius: 0 50%;
+    position: absolute;
+    bottom: -15px;
+  }
+
+  .cert > div:last-child:after {
+    content: "";
+    bottom: 0;
+    right: 0;
+    width: calc(100% + 15px);
+    height: 1.5px;
+    background-color: transparent;
+  }
+
+  .cert > div:nth-last-child(2):nth-child(odd)::after {
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: calc(100% + 15px);
+    height: 1.5px;
+    background-color: transparent;
+  }
+  /* footer */
+  #footer .icon {
+    font-size: 24px !important;
+  }
+  #footer {
+    font-size: 12px !important;
+  }
+}
