@@ -1,1 +1,1 @@
-https://hdanq.github.io/digitalCV.github.io/
+https://hdanq.github.io/digitalCV/
