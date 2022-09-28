@@ -67,7 +67,7 @@
 }
 
 /* about */
-}
+
 #about li {
   list-style-type: none !important;
   position: relative;
@@ -139,9 +139,9 @@
   width: calc(100% + 15px);
   height: 1.5px;
   background-color: #d6c08d;
-  border-radius: 50% 0;
+  border-radius: 50%;
   position: absolute;
-  bottom: -15px;
+  bottom: -28px;
 }
 .cert > div:nth-child(even)::after {
   content: "";
@@ -150,9 +150,9 @@
   width: calc(100% + 15px);
   height: 1.5px;
   background-color: #d6c08d;
-  border-radius: 0 50%;
+  border-radius: 50%;
   position: absolute;
-  bottom: -15px;
+  bottom: -28px;
 }
 
 .cert > div:last-child:after {
